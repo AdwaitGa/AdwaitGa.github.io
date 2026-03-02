@@ -22,4 +22,4 @@ social:
 - {icon: 'linkedin', link: 'https://linkedin.com/in/adwait-gaikwad-77462b5b'}
 
 contacts:
-- {name: 'Dr. Adwait Gaikwad', title: 'Postdoctoral Fellow', department: 'The Mandelstam Institute for Theoretical Physics', institution: 'University of Witwatrsrand', institution_address: '1 Jan Smuts Avenue, Braamfontein 2000, Johannesburg, South Africa', email: 'adwaitgaikwad@gmail.com', office: 'PM19', image: 'assets/img/contact.jpeg'}
+- {name: 'Dr. Adwait Gaikwad', title: 'Postdoctoral Fellow', department: 'The Mandelstam Institute for Theoretical Physics', institution: 'University of Witwatrsrand', institution_address: '1 Jan Smuts Avenue, Braamfontein 2000, Johannesburg, South Africa', email: 'adwaitgaikwad@gmail.com', office: 'PM19', image: 'assets/img/contact.jpeg', image_width: '150px', Phone: '+91 9004827759'}

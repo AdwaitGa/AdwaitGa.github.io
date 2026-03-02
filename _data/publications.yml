@@ -1,14 +1,14 @@
 featured:
 - {name: 'To gauge or to double gauge? Matrix models, global symmetry, and black hole cohomologies by AG, T. Kibe, Sam van Leuven, and K Mathieson', url: 'https://arxiv.org/abs/2512.02103'}
-- {name: 'Gravitational collapse in SYK models and Choptuik-like phenomenon by A. Dhar, AG, L. Kh Joshi, G. Mandal and S. R. Wadia', url:'https://doi.org/10.1007/JHEP11(2019)067'}
-- {name: 'Holographic dual to charged SYK from 3D Gravity and Chern-Simons by AG, L. Kh Joshi, G. Mandal and S. R. Wadia', url:'https://doi.org/10.1007/JHEP02(2020)033'}
+- {name: 'Gravitational collapse in SYK models and Choptuik-like phenomenon by A. Dhar, AG, L. Kh Joshi, G. Mandal and S. R. Wadia', url: 'https://doi.org/10.1007/JHEP11(2019)067'}
+- {name: 'Holographic dual to charged SYK from 3D Gravity and Chern-Simons by AG, L. Kh Joshi, G. Mandal and S. R. Wadia', url: 'https://doi.org/10.1007/JHEP02(2020)033'}
 
 index:
 - {name: 'To gauge or to double gauge? Matrix models, global symmetry, and black hole cohomologies by AG, T. Kibe, Sam van Leuven, and K Mathieson', url: 'https://arxiv.org/abs/2512.02103'}
 - {name: 'Boundary Liouville Conformal Field Theory in Four dimensions by AG A. Kislev, T. Levy, and Yaron Oz', url: 'https://doi.org/10.1007/JHEP07(2024)271'}
-- {name: 'QCD Worldsheet Axion from the Bootstrap by AG, V. Gorbenko, and A. L. Guerrieri, ', url:'https://doi.org/10.1007/JHEP01(2024)090' }
-- {name: 'A Microscopic Model of Black Hole Evaporation in Two Dimensions by AG, A. Kaushal, G. Mandal, and S. R. Wadia', url:'https://doi.org/10.1007/JHEP08(2023)171'}
-- {name: 'Quantum quench and thermalization to GGE in arbitrary dimensions and the odd-even effect by P. Banerjee, AG, A. Kaushal, and G. Mandal', url:'https://doi.org/10.1007/JHEP09(2020)027'}
-- {name: 'Gravitational collapse in SYK models and Choptuik-like phenomenon by A. Dhar, AG, L. Kh Joshi, G. Mandal and S. R. Wadia', url:'https://doi.org/10.1007/JHEP11(2019)067'}
-- {name: 'Holographic dual to charged SYK from 3D Gravity and Chern-Simons by AG, L. Kh Joshi, G. Mandal and S. R. Wadia', url:'https://doi.org/10.1007/JHEP02(2020)033'}
-- {name: 'Spectral Form Factor in Non-Gaussian Random Matrix Theories by AG and R. Sinha.', url:'https://journals.aps.org/prd/abstract/10.1103/PhysRevD.100.026017'}
+- {name: 'QCD Worldsheet Axion from the Bootstrap by AG, V. Gorbenko, and A. L. Guerrieri' , url: 'https://doi.org/10.1007/JHEP01(2024)090' }
+- {name: 'A Microscopic Model of Black Hole Evaporation in Two Dimensions by AG, A. Kaushal, G. Mandal, and S. R. Wadia', url: 'https://doi.org/10.1007/JHEP08(2023)171'}
+- {name: 'Quantum quench and thermalization to GGE in arbitrary dimensions and the odd-even effect by P. Banerjee, AG, A. Kaushal, and G. Mandal', url: 'https://doi.org/10.1007/JHEP09(2020)027'}
+- {name: 'Gravitational collapse in SYK models and Choptuik-like phenomenon by A. Dhar, AG, L. Kh Joshi, G. Mandal and S. R. Wadia', url: 'https://doi.org/10.1007/JHEP11(2019)067'}
+- {name: 'Holographic dual to charged SYK from 3D Gravity and Chern-Simons by AG, L. Kh Joshi, G. Mandal and S. R. Wadia', url: 'https://doi.org/10.1007/JHEP02(2020)033'}
+- {name: 'Spectral Form Factor in Non-Gaussian Random Matrix Theories by AG and R. Sinha.', url: 'https://journals.aps.org/prd/abstract/10.1103/PhysRevD.100.026017'}

@@ -9,7 +9,6 @@ permalink: /notes/
     <h3 class="fw-bold border-bottom pb-3 mb-4">Collections</h3>
     {% for c in site.data.collections %}
       <h4 class="mt-4"><a href="{{ site.github.url }}/notes/{{ c.slug }}/">{{ c.title }}</a></h4>
-      <p class="text-muted">{{ c.description }}</p>
     {% endfor %}
 
     <h3 class="fw-bold border-bottom pb-3 mb-4 mt-5">All Notes</h3>

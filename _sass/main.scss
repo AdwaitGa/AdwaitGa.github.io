@@ -20,11 +20,26 @@ body a {
 .site-header {
   background-color: #dfe6ea; // dusty blue
   border-bottom: 1px solid #c9d3d9;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .site-footer {
   background-color: #e9e2d0; // warm sand
   border-top: 1px solid #d8d1c4;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+// Keep the footer at the bottom of the window and avoid needless scrolling
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-main {
+  flex: 1 0 auto;
+}
+
+.site-main .row.mb-5 {
+  margin-bottom: 1.5rem !important;
 }

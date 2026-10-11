@@ -29,5 +29,51 @@ layout: default
         {% endfor %}
       </div>
     </div>
+    <div class="row g-5 mb-5">
+      <div class="col-md-2">
+        <h4>Talks</h4>
+      </div>
+      <div class="col-md-10">
+        {% for section in site.data.cv.talks %}
+          <p class="fw-bold">{{ section.title }}</p>
+          <p>{{ section.description }}</p>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="row g-5 mb-5">
+      <div class="col-md-2">
+        <h4>Poster Presentation</h4>
+      </div>
+      <div class="col-md-10">
+        <p class="fw-bold">{{ site.data.cv.other.poster.title }}</p>
+        <p>{{ site.data.cv.other.poster.description }}</p>
+      </div>
+    </div>
+    <div class="row g-5 mb-5">
+      <div class="col-md-2">
+        <h4>Teaching Experience</h4>
+      </div>
+      <div class="col-md-10">
+        {% for item in site.data.cv.other.teaching %}
+          <p>{{ item }}</p>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="row g-5 mb-5">
+      <div class="col-md-2">
+        <h4>Languages</h4>
+      </div>
+      <div class="col-md-10">
+        <p>{{ site.data.cv.other.languages }}</p>
+      </div>
+    </div>
+    <div class="row g-5 mb-5">
+      <div class="col-md-2">
+        <h4>Other Skills</h4>
+      </div>
+      <div class="col-md-10">
+        <p>{{ site.data.cv.other.skills }}</p>
+      </div>
+    </div>
   </div>
 </div>

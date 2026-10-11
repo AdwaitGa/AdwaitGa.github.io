@@ -5,9 +5,9 @@
     <div class="row g-5 mb-5">
       <div class="col-md-4">
         <h4>{{ contact.name }}</h4>
-        <p>{{ contact.title }} | {{ contact.department }}</p>
-        <p>{{ contact.institution }} | {{ contact.institution_address }}</p>
-        <p>Phone: {{ contact.phone }}</p>
+        <p>{{ contact.title }}<br><br>{{ contact.department }}</p>
+        <p>{{ contact.institution }}<br><br>{{ contact.institution_address | replace: ", ", "<br>" }}</p>
+        <p>Phone:<br>{{ contact.phone | replace: ", ", "<br>" }}</p>
         <p>Email: {{ contact.email }}</p>
         <p>Office: {{ contact.office }}</p>
       </div>

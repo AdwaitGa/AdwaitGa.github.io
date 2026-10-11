@@ -19,6 +19,8 @@ courses:
 
 social:
 - {icon: 'github', link: 'https://github.com/AdwaitGa'}
+- {icon: 'inspire', link: 'https://inspirehep.net/authors/1607941'}
+- {icon: 'scholar', link: 'https://scholar.google.com/citations?hl=en&user=YnC8YyUAAAAJ'}
 #- {icon: 'twitter', link: 'https://twitter.com/paululele'}
 #- {icon: 'instagram', link: 'https://instagram.com/paululele'}
 - {icon: 'linkedin', link: 'https://linkedin.com/in/adwait-gaikwad-77462b5b'}

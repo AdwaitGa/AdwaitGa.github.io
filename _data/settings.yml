@@ -3,7 +3,6 @@ menu:
 - {name: 'Home', url: '/'}
 - {name: 'Publications', url: '/publications'}
 - {name: 'Blog', url: '/blog'}
-- {name: 'Teaching', url: '/courses'}
 - {name: 'CV', url: '/cv'}
 - {name: 'Contact', url: '/contact'}
 
@@ -12,18 +11,13 @@ menu:
 #- {name: 'Lab Technician', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', #email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/lab-technician.jpg', url: 'lab-technician'}
 #- {name: 'Graduate Student', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', #email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/graduate-student.jpg', url: 'graduate-student'}
 
-courses:
-- {name: 'Vector Calculus', url: 'vector-calculus'}
-- {name: 'Quantum Mechanics', url: 'quantum-mechanics'}
-- {name: 'Stellar Structures', url: 'stellar-structures'}
-
 social:
-- {icon: 'github', link: 'https://github.com/AdwaitGa'}
-- {icon: 'inspire', link: 'https://inspirehep.net/authors/1607941'}
-- {icon: 'scholar', link: 'https://scholar.google.com/citations?hl=en&user=YnC8YyUAAAAJ'}
+- {icon: 'github', name: 'GitHub', link: 'https://github.com/AdwaitGa'}
+- {icon: 'inspire', name: 'INSPIRE', link: 'https://inspirehep.net/authors/1607941'}
+- {icon: 'scholar', name: 'Google Scholar', link: 'https://scholar.google.com/citations?hl=en&user=YnC8YyUAAAAJ'}
 #- {icon: 'twitter', link: 'https://twitter.com/paululele'}
 #- {icon: 'instagram', link: 'https://instagram.com/paululele'}
-- {icon: 'linkedin', link: 'https://linkedin.com/in/adwait-gaikwad-77462b5b'}
+- {icon: 'linkedin', name: 'LinkedIn', link: 'https://linkedin.com/in/adwait-gaikwad-77462b5b'}
 
 contacts:
 - {name: 'Dr. Adwait Gaikwad', title: 'Postdoctoral Researcher', department: 'The Mandelstam Institute for Theoretical Physics', institution: 'University of the Witwatersrand', institution_address: '1 Jan Smuts Avenue, Braamfontein 2000, Johannesburg, South Africa', email: 'adwaitgaikwad@gmail.com', office: 'PM19', image: 'assets/img/wits_logo.png', phone: '+91-9004827759, +27-0713454320'}

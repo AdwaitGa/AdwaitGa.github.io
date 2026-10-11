@@ -18,12 +18,18 @@ body a {
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   background-color: #dfe6ea; // dusty blue
   border-bottom: 1px solid #c9d3d9;
   margin-bottom: 1.5rem;
 }
 
 .site-footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
   background-color: #e9e2d0; // warm sand
   border-top: 1px solid #d8d1c4;
   margin-top: 1.5rem;

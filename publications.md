@@ -3,8 +3,8 @@ layout: default
 title: "Publications"
 ---
 
-<div class="row g-5 mb-5">
-  <div class="col-md-12">
+<div class="row g-5 mb-5" markdown="1">
+  <div class="col-md-12" markdown="1">
     <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
 
 My papers/preprints are listed below in reverse chronological order.

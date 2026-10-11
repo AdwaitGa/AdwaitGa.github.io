@@ -1,0 +1,4 @@
+- {slug: 'physics', title: 'Physics', description: 'On various aspects of theoretical and mathematical physics.'}
+- {slug: 'philosophy', title: 'Philosophy', description: 'On philosophy and the foundations of science.'}
+- {slug: 'political-economy', title: 'Political Economy', description: 'On economics, politics and society.'}
+- {slug: 'miscellaneous', title: 'Miscellaneous', description: 'Everything else.'}

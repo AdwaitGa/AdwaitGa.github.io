@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="row g-5 mb-5">
+  <div class="col-md-12">
+    <h3 class="fw-bold border-bottom pb-3 mb-4">{{ page.title }}</h3>
+    <p class="text-muted">{{ page.description }}</p>
+    {% assign found = 0 %}
+    {% for post in site.posts %}
+      {% if post.categories contains page.collection %}
+        {% assign found = found | plus: 1 %}
+        <p>
+          <a href="{{ site.github.url }}{{ post.url }}" class="fw-bold">{{ post.title }}</a>
+          <span class="text-muted"> - {{ post.date | date: "%B %-d, %Y" }}</span>
+          {% if post.excerpt %}<br>{{ post.excerpt | strip_html | truncatewords: 40 }}{% endif %}
+        </p>
+      {% endif %}
+    {% endfor %}
+    {% if found == 0 %}<p>No notes in this collection yet.</p>{% endif %}
+    <p class="mt-4"><a href="{{ site.github.url }}/notes/">&larr; All collections</a></p>
+  </div>
+</div>

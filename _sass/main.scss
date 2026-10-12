@@ -49,3 +49,9 @@ body {
 .site-main .row.mb-5 {
   margin-bottom: 1.5rem !important;
 }
+
+// Contact page: image column 40% wider than the old half-width layout (50% -> 70%)
+@media (min-width: 768px) {
+  .contact-text { flex: 0 0 auto; width: 30%; }
+  .contact-image { flex: 0 0 auto; width: 70%; }
+}

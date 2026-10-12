@@ -3,15 +3,15 @@
     <h3 class="fw-bold border-bottom pb-3 mb-5">Contact</h3>
     {% for contact in site.data.settings.contacts %}
     <div class="row g-5 mb-5">
-      <div class="col-md-6">
+      <div class="col-12 contact-text">
         <h4>{{ contact.name }}</h4>
         <p>{{ contact.title }}<br><br>{{ contact.department }}<br>{{ contact.institution }}<br><br>{{ contact.institution_address | replace: ", ", "<br>" }}</p>
         <p>Phone:<br>{{ contact.phone | replace: ", ", "<br>" }}</p>
         <p>Email: {{ contact.email }}</p>
         <p>Office: {{ contact.office }}</p>
       </div>
-      <div class="col-md-6">
-        <img src="{{ site.github.url }}/{{ contact.image }}" alt="Notebook" width="100%" style="max-height:50vh;object-fit:cover;">
+      <div class="col-12 contact-image">
+        <img src="{{ site.github.url }}/{{ contact.image }}" alt="Notebook" width="100%" style="max-height:55vh;object-fit:cover;">
       </div>
     </div>
     {% endfor %}

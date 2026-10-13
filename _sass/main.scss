@@ -55,3 +55,20 @@ body {
   .contact-text { flex: 0 0 auto; width: 30%; }
   .contact-image { flex: 0 0 auto; width: 70%; }
 }
+
+// Home page: centre the research text and photo vertically between header and footer
+.site-main.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.site-main.home > div {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .site-main.home > div {
+    max-width: 91.666667%;
+  }
+}

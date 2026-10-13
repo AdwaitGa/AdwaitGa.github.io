@@ -24,9 +24,9 @@
   var KEY = 'notesUnlocked', ANSWER = 'f8fdea035ac1a189f5fa4d4f729941f15218513bc4f1108ef5c9c306f799b71c';
   var quiz = document.getElementById('quiz');
   var gated = document.getElementById('gated');
-  function unlocked() { try { return localStorage.getItem(KEY) === '1'; } catch (e) { return false; } }
-  function open() { quiz.hidden = true; gated.hidden = false; }
-  if (unlocked()) { open(); } else { quiz.hidden = false; }
+  function unlocked() { try { return sessionStorage.getItem(KEY) === '1'; } catch (e) { return false; } }
+  function reveal() { quiz.hidden = true; gated.hidden = false; }
+  if (unlocked()) { reveal(); } else { quiz.hidden = false; }
   function sha256(text) {
     return crypto.subtle.digest('SHA-256', new TextEncoder().encode(text)).then(function (buf) {
       return Array.prototype.map.call(new Uint8Array(buf), function (b) { return ('0' + b.toString(16)).slice(-2); }).join('');
@@ -37,8 +37,8 @@
     if (!btn) return;
     sha256('notes-quiz:' + btn.getAttribute('data-id')).then(function (h) {
       if (h === ANSWER) {
-        try { localStorage.setItem(KEY, '1'); } catch (e) {}
-        open();
+        try { sessionStorage.setItem(KEY, '1'); } catch (e) {}
+        reveal();
       } else {
         document.getElementById('quiz-msg').hidden = false;
       }

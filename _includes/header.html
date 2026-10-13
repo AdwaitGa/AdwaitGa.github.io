@@ -9,7 +9,7 @@
   </div>
   <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
     {% for item in site.data.settings.menu %}
-      <a class="me-4 py-2 fs-5 text-decoration-none" href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
+      <a class="me-4 py-2 fs-5 text-decoration-none" href="{{ site.github.url }}{{ item.url }}"{% if item.url == '/notes' %} onclick="try{sessionStorage.removeItem('notesUnlocked')}catch(e){}"{% endif %}>{{ item.name }}</a>
     {% endfor %}
   </nav>
 </header>

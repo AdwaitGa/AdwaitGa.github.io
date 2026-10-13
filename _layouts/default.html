@@ -10,8 +10,8 @@
     <div class="site-main {{ page.layout }}">
       <div class="col-lg-11 mx-auto p-3">
         {% if page.url contains '/notes' or page.layout == 'post' %}
-          {% include quiz.html %}
           <div id="gated" hidden>{{ content }}</div>
+          {% include quiz.html %}
         {% else %}
           {{ content }}
         {% endif %}

@@ -1,0 +1,48 @@
+<div id="quiz" class="row g-4 mb-5" hidden>
+  <div class="col-12">
+    <h3 class="fw-bold border-bottom pb-3 mb-4">Quick question before the notes</h3>
+    <p>Choose the picture that matches the one below to continue.</p>
+  </div>
+  <div class="col-12 col-md-4 text-center">
+    <img src="{{ site.github.url }}/assets/img/quiz/question.jpg" alt="Question" style="max-width:100%;max-height:45vh;" class="rounded">
+  </div>
+  <div class="col-12 col-md-8">
+    <div class="row g-3" id="quiz-options">
+      {% for n in (1..4) %}
+      <div class="col-6 col-lg-3">
+        <button type="button" class="quiz-option" data-id="option_{{ n }}" aria-label="Option {{ n }}">
+          <img src="{{ site.github.url }}/assets/img/quiz/option_{{ n }}.jpg" alt="Option {{ n }}">
+        </button>
+      </div>
+      {% endfor %}
+    </div>
+    <p id="quiz-msg" class="mt-3 fw-bold" role="alert" hidden>That is not the right answer. Please try again.</p>
+  </div>
+</div>
+<script>
+(function () {
+  var KEY = 'notesUnlocked', ANSWER = 'f8fdea035ac1a189f5fa4d4f729941f15218513bc4f1108ef5c9c306f799b71c';
+  var quiz = document.getElementById('quiz');
+  var gated = document.getElementById('gated');
+  function unlocked() { try { return localStorage.getItem(KEY) === '1'; } catch (e) { return false; } }
+  function open() { quiz.hidden = true; gated.hidden = false; }
+  if (unlocked()) { open(); } else { quiz.hidden = false; }
+  function sha256(text) {
+    return crypto.subtle.digest('SHA-256', new TextEncoder().encode(text)).then(function (buf) {
+      return Array.prototype.map.call(new Uint8Array(buf), function (b) { return ('0' + b.toString(16)).slice(-2); }).join('');
+    });
+  }
+  document.getElementById('quiz-options').addEventListener('click', function (e) {
+    var btn = e.target.closest('.quiz-option');
+    if (!btn) return;
+    sha256('notes-quiz:' + btn.getAttribute('data-id')).then(function (h) {
+      if (h === ANSWER) {
+        try { localStorage.setItem(KEY, '1'); } catch (e) {}
+        open();
+      } else {
+        document.getElementById('quiz-msg').hidden = false;
+      }
+    });
+  });
+})();
+</script>

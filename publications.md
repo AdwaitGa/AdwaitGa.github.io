@@ -7,7 +7,7 @@ My papers/preprints are listed below in reverse chronological order.
 
 - **Exact lattice bosonization of double scaled c=1 matrix model**<br>
 with G. Mandal and A. Mohan.<br>
-In preparation.
+Preprint available at [arXiv:2610.34376](https://arxiv.org/abs/2610.34376).
 
 - **To gauge or to double gauge? Matrix models, global symmetry, and black hole cohomologies**<br>
 with T. Kibe, S. van Leuven, and K. Mathieson.<br>

@@ -6,6 +6,16 @@ layout: default
   <div class="col-md-12">
     <h3 class="fw-bold border-bottom pb-3 mb-4">{{ page.title }}</h3>
     <p class="text-muted">{{ page.description }}</p>
+    {% if page.pdfs %}
+      <ul class="notes-index">
+        {% for n in page.pdfs %}
+          <li>
+            <a href="{{ site.github.url }}/{{ n.file }}" class="fw-bold">{{ n.title }}</a> <span class="text-muted">(PDF)</span>
+            {% if n.description %}<br>{{ n.description }}{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
     {% assign found = 0 %}
     {% for post in site.posts %}
       {% if post.categories contains page.collection %}
@@ -17,7 +27,9 @@ layout: default
         </p>
       {% endif %}
     {% endfor %}
-    {% if found == 0 %}<p>No notes in this collection yet.</p>{% endif %}
-    <p class="mt-4"><a href="{{ site.github.url }}/notes/">&larr; All collections</a></p>
+    {% if found == 0 and page.pdfs == nil %}<p>No notes in this collection yet.</p>{% endif %}
+    {% assign back_url = page.back_url | default: '/notes/the-rest/' %}
+    {% assign back_label = page.back_label | default: 'All collections' %}
+    <p class="mt-4"><a href="{{ site.github.url }}{{ back_url }}">&larr; {{ back_label }}</a></p>
   </div>
 </div>

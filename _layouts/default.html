@@ -9,7 +9,10 @@
     </div>
     <div class="site-main {{ page.layout }}">
       <div class="col-lg-11 mx-auto p-3">
-        {% if page.url contains '/notes' or page.layout == 'post' %}
+        {% assign gated = false %}
+        {% if page.url contains '/notes' or page.layout == 'post' %}{% assign gated = true %}{% endif %}
+        {% if page.url == '/notes/' or page.url == '/notes/physics/' %}{% assign gated = false %}{% endif %}
+        {% if gated %}
           <div id="gated" hidden>{{ content }}</div>
           {% include quiz.html %}
         {% else %}
